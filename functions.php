@@ -1086,8 +1086,8 @@ function rekki_custom_sportbooks_metabox( $post ) {?>
 	$books = $books_data;
 
 	?>
-
-    <select name="_rekki_sportbooks" id="_rekki_sportbooks" class="widefat">
+    <label for="_rekki_sportbooks">Sportsbook</label>
+    <select name="_rekki_sportbooks" id="_rekki_sportbooks">
 	    <?php  foreach ($books as $book=>$title): ?>
             <option value="<?=$book?>" <?php selected( $pageLayout, $book); ?>>
 				<?=$title?>
