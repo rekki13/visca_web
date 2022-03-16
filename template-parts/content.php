@@ -29,6 +29,8 @@
 
 		<div class="entry-content">
 
+            <?php get_template_part('template-parts/rekki','box')?>
+
 			<?php
 			if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
 				the_excerpt();
